@@ -32,10 +32,39 @@ pytest -q tests/test_affect_foundation.py
 python -m scripts.evaluate_affect_cases
 ```
 
+## Shadow comparison
+
+`backend_app/affect_shadow.py` compares the additive affect assessment with a
+legacy `NeedState` or `InterpretResponse` without changing production output.
+It classifies each comparison as:
+
+- `exact`;
+- `compatible`;
+- `material_disagreement`;
+- `insufficient_signal`.
+
+High-value disagreement reasons include positive affect being mapped to
+`low`/`tired`, a `tired` label without fatigue support, and an outward-facing
+goal such as `connect` or `savor` conflicting with a rest label.
+
+The shadow event stores only an input digest, input length and structured
+snapshots. It never stores the utterance or raw conversation context.
+
+Run:
+
+```bash
+pytest -q tests/test_affect_shadow.py
+```
+
+The runner is intentionally not wired into `interpretation.py` yet. That final
+wiring should happen after parallel work on the existing interpretation path is
+reconciled, so the integration commit can be reviewed separately.
+
 ## Next integration steps
 
-1. Add an optional `affect` payload to `InterpretResponse` while retaining `NeedState.mood_id`.
-2. Populate it in `interpretation.py` for both model and rules paths.
-3. Log privacy-safe rule/model/final snapshots in development diagnostics.
-4. Shadow-run the new assessment beside the legacy recommender.
-5. Introduce regulation-goal → environmental-affordance scoring only after interpretation regression tests are stable.
+1. Reconcile concurrent changes to `interpretation.py` and `schemas.py`.
+2. Add an optional `affect` payload to `InterpretResponse` while retaining `NeedState.mood_id`.
+3. Invoke `run_affect_shadow()` after the legacy result is finalized.
+4. Log only `AffectShadowResult.trace` in development diagnostics.
+5. Keep recommendation output unchanged until disagreement rates are reviewed.
+6. Introduce regulation-goal → environmental-affordance scoring only after interpretation regression tests are stable.
