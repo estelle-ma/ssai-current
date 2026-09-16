@@ -1,0 +1,52 @@
+[
+  {"id":"anxious_01","category":"anxious","text":"明天要答辩，脑子一直转，坐不住","allowed_primary_goals":["ground"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"anxious_02","category":"anxious","text":"我现在有点心慌，想找个能吹风的地方","allowed_primary_goals":["ground","savor"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"anxious_03","category":"anxious","text":"刚收到一封不好的邮件，整个人绷着","allowed_primary_goals":["ground"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"anxious_04","category":"anxious","text":"一直担心明天的结果，想喘口气","allowed_primary_goals":["ground"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"anxious_05","category":"anxious","text":"我不累，就是紧张得停不下来","allowed_primary_goals":["ground"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"anxious_06","category":"anxious","text":"有点慌，但不想安静，我想去有人的地方","allowed_primary_goals":["connect"],"valence":"negative","arousal":"positive","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired"]},
+
+  {"id":"angry_01","category":"angry","text":"刚吵完架，一肚子火，想出去走走","allowed_primary_goals":["move_discharge"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"angry_02","category":"angry","text":"被同事气到了，想打一场球","allowed_primary_goals":["move_discharge"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"angry_03","category":"angry","text":"我现在很生气，不想坐着","allowed_primary_goals":["move_discharge"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"angry_04","category":"angry","text":"憋着一股火，想骑车","allowed_primary_goals":["move_discharge"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+  {"id":"angry_05","category":"angry","text":"气死了，想去热闹点的地方","allowed_primary_goals":["connect"],"valence":"negative","arousal":"positive","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired"]},
+  {"id":"angry_06","category":"angry","text":"不是累，是生气，想动一动","allowed_primary_goals":["move_discharge"],"valence":"negative","arousal":"positive","forbidden_legacy_moods":["tired"]},
+
+  {"id":"low_01","category":"low","text":"今天什么都提不起劲，但不想一直待在家","allowed_primary_goals":["activate"],"valence":"negative","arousal":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"low_02","category":"low","text":"有点低落，想晒晒太阳","allowed_primary_goals":["activate"],"valence":"negative","arousal":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"low_03","category":"low","text":"心情很沉，想去有一点生活气的地方","allowed_primary_goals":["connect"],"valence":"negative","arousal":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"low_04","category":"low","text":"刚被拒绝，挺难过的，想慢慢走一走","allowed_primary_goals":["move_discharge","activate"],"valence":"negative","arousal":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"low_05","category":"low","text":"没什么力气，但想看看树","allowed_primary_goals":["activate","downshift"],"valence":"negative","forbidden_legacy_moods":[]},
+  {"id":"low_06","category":"low","text":"想哭，不想说话，只想找个能坐着的地方","allowed_primary_goals":["downshift"],"valence":"negative","arousal":"negative","forbidden_legacy_moods":["tired"]},
+
+  {"id":"lonely_01","category":"lonely","text":"不想聊天，但想待在有人的地方","allowed_primary_goals":["connect"],"valence":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"lonely_02","category":"lonely","text":"一个人有点难受，想周围有点生活气","allowed_primary_goals":["connect"],"valence":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"lonely_03","category":"lonely","text":"今天很孤单，想找个独自去也不奇怪的地方","allowed_primary_goals":["connect"],"valence":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"lonely_04","category":"lonely","text":"想有人在旁边，但不用跟我说话","allowed_primary_goals":["connect"],"valence":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"lonely_05","category":"lonely","text":"不想见朋友，只想在人群边上待一会儿","allowed_primary_goals":["connect"],"forbidden_legacy_moods":["tired"]},
+  {"id":"lonely_06","category":"lonely","text":"空落落的，想去热闹一点","allowed_primary_goals":["connect"],"valence":"negative","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired"]},
+
+  {"id":"positive_01","category":"positive","text":"项目终于过了，我现在特别兴奋","allowed_primary_goals":["savor"],"valence":"positive","arousal":"positive","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired","low"]},
+  {"id":"positive_02","category":"positive","text":"刚拿到 offer，开心得不想回家","allowed_primary_goals":["savor"],"valence":"positive","arousal":"positive","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired","low"]},
+  {"id":"positive_03","category":"positive","text":"今天状态特别好，想去看夕阳吹风","allowed_primary_goals":["savor"],"valence":"positive","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired","low"]},
+  {"id":"positive_04","category":"positive","text":"我很高兴，想找朋友一起庆祝","allowed_primary_goals":["connect","savor"],"valence":"positive","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired","low"]},
+  {"id":"positive_05","category":"positive","text":"心情很好，想去听现场音乐","allowed_primary_goals":["savor"],"valence":"positive","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired","low"]},
+  {"id":"positive_06","category":"positive","text":"今天很满足，想一个人慢慢逛逛","allowed_primary_goals":["savor","broaden"],"valence":"positive","forbidden_goals":["downshift"],"forbidden_legacy_moods":["tired","low"]},
+
+  {"id":"broaden_01","category":"broaden","text":"在家待腻了，想看点没见过的","allowed_primary_goals":["broaden"],"forbidden_legacy_moods":["tired"]},
+  {"id":"broaden_02","category":"broaden","text":"脑子很空，想做点手工","allowed_primary_goals":["broaden"],"forbidden_legacy_moods":["tired"]},
+  {"id":"broaden_03","category":"broaden","text":"有点无聊，想去看展","allowed_primary_goals":["broaden"],"arousal":"negative","forbidden_legacy_moods":["tired"]},
+  {"id":"focus_01","category":"focus","text":"状态还行，想找个地方写东西","allowed_primary_goals":["focus"],"forbidden_legacy_moods":["tired","low"]},
+  {"id":"focus_02","category":"focus","text":"想换个地方工作，最好能坐久一点","allowed_primary_goals":["focus"],"forbidden_legacy_moods":["tired","low"]},
+  {"id":"quiet_01","category":"explicit","text":"没什么情绪，就是想找个安静的咖啡馆","allowed_primary_goals":["downshift"],"forbidden_legacy_moods":["tired","low"]},
+
+  {"id":"unknown_01","category":"unknown","text":"随便吧","allowed_primary_goals":[],"expect_unknown":true,"expect_clarification":true,"forbidden_legacy_moods":["tired","low"]},
+  {"id":"unknown_02","category":"unknown","text":"今天发生了一些事","allowed_primary_goals":[],"expect_unknown":true,"expect_clarification":true,"forbidden_legacy_moods":["tired","low"]},
+  {"id":"unknown_03","category":"unknown","text":"我想吃烤串","allowed_primary_goals":[],"expect_unknown":true,"expect_clarification":true,"forbidden_legacy_moods":["tired","low"]},
+
+  {"id":"tired_01","category":"tired","text":"昨晚没睡，今天累坏了，只想坐着休息","allowed_primary_goals":["downshift"],"fatigue":"high"},
+  {"id":"tired_02","category":"tired","text":"我真的很困，想找个安静的地方待着","allowed_primary_goals":["downshift"],"fatigue":"high"},
+  {"id":"tired_03","category":"tired","text":"忙了三天已经没力气了，只想休息","allowed_primary_goals":["downshift"],"fatigue":"high"},
+  {"id":"mixed_01","category":"mixed","text":"走了一天身体很累，但心情很好，想看夕阳","allowed_primary_goals":["savor","downshift"],"valence":"positive","fatigue":"high"}
+]
